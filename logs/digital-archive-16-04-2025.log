@@ -1,0 +1,28 @@
+{"level":"info","ts":"2025-04-16T10:57:24.852+0700","caller":"api-archiven-v2/main.go:37","msg":"request","method":"GET","uri":"/files","status":200,"latency":"2.834093ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T10:57:32.289+0700","caller":"api-archiven-v2/main.go:37","msg":"request","method":"GET","uri":"/files","status":200,"latency":"1.317256ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T11:11:20.611+0700","caller":"api-archiven-v2/main.go:37","msg":"request","method":"POST","uri":"/files","status":400,"latency":"1.86926ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T11:11:38.087+0700","caller":"infrastructure/mongodb_repository.go:58","msg":"file saved successfully","file_id":"","file_size":0}
+{"level":"info","ts":"2025-04-16T11:11:38.138+0700","caller":"handler/file_handler.go:63","msg":"file uploaded successfully","file_id":"67ff2dfa755138bfa2ae40a1","file_name":"sk.pdf","file_size":431748}
+{"level":"info","ts":"2025-04-16T11:11:38.140+0700","caller":"api-archiven-v2/main.go:37","msg":"request","method":"POST","uri":"/files","status":201,"latency":"67.328589ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T11:12:36.690+0700","caller":"api-archiven-v2/main.go:37","msg":"request","method":"GET","uri":"/files/67ff2dfa755138bfa2ae40a1/download","status":200,"latency":"776.186848ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T11:29:03.843+0700","caller":"api-archiven-v2/main.go:37","msg":"request","method":"POST","uri":"/files","status":400,"latency":"5.959049ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T11:29:20.946+0700","caller":"api-archiven-v2/main.go:37","msg":"request","method":"POST","uri":"/files","status":400,"latency":"1.887364ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T11:32:17.128+0700","caller":"infrastructure/mongodb_repository.go:58","msg":"file saved successfully","file_id":"","file_size":0}
+{"level":"info","ts":"2025-04-16T11:32:17.148+0700","caller":"handler/file_handler.go:91","msg":"file uploaded successfully","file_id":"67ff32d11498a5c578c5bb44","file_name":"197605112009011005-SUDI WIDODO (2).pdf","file_size":147136}
+{"level":"info","ts":"2025-04-16T11:32:17.149+0700","caller":"api-archiven-v2/main.go:37","msg":"request","method":"POST","uri":"/files","status":201,"latency":"37.911169ms","ip":"::1"}
+{"level":"error","ts":"2025-04-16T11:34:31.144+0700","caller":"handler/file_handler.go:68","msg":"file upload failed","error":"Key: '' Error:Field validation for '' failed on the 'mimetype' tag","filename":"Laporan Harian Honeypot 19 Desember 2024.docx","content_type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document","time":"2025-04-16T11:34:31+07:00"}
+{"level":"info","ts":"2025-04-16T11:34:31.147+0700","caller":"api-archiven-v2/main.go:37","msg":"request","method":"POST","uri":"/files","status":400,"latency":"7.038761ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T11:36:41.995+0700","caller":"api-archiven-v2/main.go:37","msg":"request","method":"GET","uri":"/files","status":200,"latency":"17.071529ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T12:10:38.209+0700","caller":"api-archiven-v2/main.go:37","msg":"request","method":"GET","uri":"/files","status":200,"latency":"51.893211ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T12:10:47.444+0700","caller":"api-archiven-v2/main.go:37","msg":"request","method":"GET","uri":"/files","status":200,"latency":"2.609408ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T12:42:59.776+0700","caller":"api-archiven-v2/main.go:38","msg":"request","method":"GET","uri":"/files","status":200,"latency":"4.601751ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T12:43:08.589+0700","caller":"api-archiven-v2/main.go:38","msg":"request","method":"GET","uri":"/files","status":200,"latency":"1.841506ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T12:43:17.121+0700","caller":"api-archiven-v2/main.go:38","msg":"request","method":"GET","uri":"/files","status":200,"latency":"2.29462ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T12:43:29.296+0700","caller":"api-archiven-v2/main.go:38","msg":"request","method":"GET","uri":"/files","status":200,"latency":"1.821413ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T12:45:02.703+0700","caller":"api-archiven-v2/main.go:38","msg":"request","method":"GET","uri":"/files","status":200,"latency":"4.263105ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T12:45:16.236+0700","caller":"api-archiven-v2/main.go:38","msg":"request","method":"GET","uri":"/files","status":200,"latency":"1.81616ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T12:46:10.004+0700","caller":"api-archiven-v2/main.go:38","msg":"request","method":"GET","uri":"/files","status":200,"latency":"2.397135ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T12:51:47.142+0700","caller":"api-archiven-v2/main.go:38","msg":"request","method":"GET","uri":"/files","status":200,"latency":"11.209607ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T12:52:04.439+0700","caller":"api-archiven-v2/main.go:38","msg":"request","method":"GET","uri":"/files","status":200,"latency":"13.547271ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T12:53:33.938+0700","caller":"api-archiven-v2/main.go:38","msg":"request","method":"GET","uri":"/files","status":200,"latency":"4.248918ms","ip":"::1"}
+{"level":"info","ts":"2025-04-16T12:53:43.148+0700","caller":"api-archiven-v2/main.go:38","msg":"request","method":"GET","uri":"/files","status":200,"latency":"6.388635ms","ip":"::1"}

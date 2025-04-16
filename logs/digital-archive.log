@@ -1,0 +1,1 @@
+{"level":"info","ts":"2025-04-16T10:54:11.725+0700","caller":"api-archiven-v2/main.go:37","msg":"request","method":"GET","uri":"/files","status":200,"latency":"3.749111ms","ip":"::1"}

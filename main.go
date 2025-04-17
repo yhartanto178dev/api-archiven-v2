@@ -79,7 +79,7 @@ func main() {
 
 	// Routes
 	e.POST("/files", fileHandlers.UploadFile)
-	e.GET("/files/:id", fileHandlers.GetFileByID)
+	e.GET("/file/:id", fileHandlers.GetFileByID)
 	e.GET("/files", fileHandlers.GetAllFiles, middleware.Pagination)
 	e.GET("/files/:id/download", fileHandlers.DownloadFile)
 

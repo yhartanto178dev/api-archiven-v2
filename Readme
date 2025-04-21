@@ -1,0 +1,51 @@
+# API Archiven v2
+
+Modern API service built with Go Echo framework and MongoDB for document archival management.
+
+## Features
+
+- Document storage and retrieval
+- Metadata management
+- User authentication and authorization
+- RESTful API endpoints
+- Secure file handling
+- MongoDB integration
+- Echo framework implementation
+
+## Requirements
+
+- Go 1.19 or higher
+- MongoDB 5.0 or higher
+- Echo framework
+
+## Installation
+
+```bash
+go mod init
+go mod tidy
+```
+
+## Configuration
+
+1. Create `.env` file
+2. Set MongoDB connection string
+3. Configure application settings
+4. Set server port and environment
+
+## Usage
+
+```bash
+go run main.go
+```
+
+## API Documentation
+
+API endpoints and documentation will be available at `/swagger` after starting the server.
+
+## License
+
+MIT
+
+## Contributing
+
+Please read CONTRIBUTING.md for details on contributing to this project.

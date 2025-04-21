@@ -8,10 +8,8 @@ import (
 
 	"github.com/labstack/echo/v4"
 
-	"github.com/yhartanto178dev/api-archiven-v2/application/usecases"
-	"github.com/yhartanto178dev/api-archiven-v2/infrastructure"
 	"github.com/yhartanto178dev/api-archiven-v2/infrastructure/configs"
-	"github.com/yhartanto178dev/api-archiven-v2/infrastructure/web/middleware"
+	"github.com/yhartanto178dev/api-archiven-v2/infrastructure/web"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
@@ -65,22 +63,8 @@ func main() {
 
 	db := client.Database(dbName)
 
-	// Repository initialization
-	fileRepo := infrastructure.NewMongoFileRepository(db)
-
-	// Use cases initialization
-	uploadUC := usecases.NewUploadFileUseCase(fileRepo)
-	getFileUC := usecases.NewGetFileUseCase(fileRepo)
-	getAllUC := usecases.NewGetAllFilesUseCase(fileRepo)
-
-	// Handlers initialization
-	fileHandlers := handlers.NewFileHandlers(uploadUC, getFileUC, getAllUC)
-
-	// Routes
-	e.POST("/files", fileHandlers.UploadFile)
-	e.GET("/files/:id", fileHandlers.GetFileByID)
-	e.GET("/files", fileHandlers.GetAllFiles, middleware.Pagination)
-	e.GET("/files/:id/download", fileHandlers.DownloadFile)
+	// Routing Initialization
+	web.SetupRoutes(e, db)
 
 	// Start server
 	port := ":" + configs.GetServerPort()

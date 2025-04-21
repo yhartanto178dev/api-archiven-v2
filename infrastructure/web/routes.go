@@ -23,7 +23,7 @@ func SetupRoutes(e *echo.Echo, db *mongo.Database) { // Repository initializatio
 	// Register routes
 	ApiV1 := e.Group("/api/v1")
 	// Routes
-	ApiV1.POST("/files", fileHandlers.UploadFile)
+	ApiV1.POST("/upload", fileHandlers.UploadFile)
 	ApiV1.GET("/files/:id", fileHandlers.GetFileByID)
 	ApiV1.GET("/files", fileHandlers.GetAllFiles, middleware.Pagination)
 	ApiV1.GET("/files/:id/download", fileHandlers.DownloadFile)
